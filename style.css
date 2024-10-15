@@ -88,6 +88,11 @@ nav ul li a:hover {
     padding-right: 100px;
 }
 
+.hiddenimg{
+    visibility: hidden;
+    height: 0;
+}
+
 footer {
     background-color: #f0f0f0;
     color: #333;
@@ -111,6 +116,7 @@ footer blockquote {
     margin: 10px 0; 
 }
 
+/* Hp */
 @media (max-width: 768px) {
     nav {
         width: 100%;
@@ -144,5 +150,49 @@ footer blockquote {
     .content ul {
         display: none;
     }
+
+    .hiddenimg{
+        display: none;
+    }
 }
 
+/* Tablet */
+@media only screen and (min-width:767px) and (max-width:1025px){
+    nav {
+        width: 100%;
+        position: relative; 
+        top: 0; 
+        justify-content: center; 
+        padding: 10px 0; 
+    }
+
+    nav ul {
+        display: flex; 
+        margin: 0; 
+        padding: 0; 
+        justify-content: center; 
+    }
+
+    nav ul li {
+        margin: 0 15px; 
+    }
+
+    #main {
+      margin: 0; 
+    }
+
+    .content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .content p:nth-of-type(3),
+    .content ul {
+        display: hidden;
+    }
+    .hiddenimg{
+        visibility: visible;
+        height: 100%;
+    }
+    
+}
