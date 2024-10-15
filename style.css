@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    background-color: #F2F0E4;
+    color: #1B2141;
+    text-align: left;
+    padding: 11px;
+    justify-content: space-between;
+    border-bottom: 3px solid #333; 
+    border-radius: 0.5px;
+}
+
+header a{
+    text-decoration: none;
+    font-family: Copperplate, fantasy;
+    margin-left: 5px; 
+    font-size: 30px; 
+    color: inherit;
+    
+}
+
+header a:hover{
+    color: #4e4d4d;
+}
+
+header img{
+    border-radius: 50%; 
+    height: 50px;
+}
+
+nav {
+    background-color: #333;
+    position: absolute; 
+    top: 74px;
+    left: 0;
+    width: 200px;
+    height: 100%; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+nav ul li {
+    margin: 15px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #bcb9b9;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 220px; 
+    padding: 20px;
+    background-color: #f4f4f4;
+    height: calc(100vh - 60px); 
+    justify-content: space-between; 
+}
+
+.content {
+    flex-grow: 1; 
+    display: flex;
+    height: 100%;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: start; 
+    text-align: center; 
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+    border: 3px solid #333; 
+    border-radius: 0.5px;
+}
+
+footer p {
+    margin: 0; 
+    font-size: 16px;
+}
+
+footer blockquote {
+    font-size: 18px; 
+    font-style: italic; 
+    color: #555; 
+    margin: 10px 0; 
+}
+
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+        position: relative; 
+        top: 0; 
+        justify-content: center; 
+        padding: 10px 0; 
+    }
+
+    nav ul {
+        display: flex; 
+        margin: 0; 
+        padding: 0; 
+        justify-content: center; 
+    }
+
+    nav ul li {
+        margin: 0 15px; 
+    }
+
+    #main {
+      margin: 0; 
+    }
+
+    .content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .content p:nth-of-type(3),
+    .content ul {
+        display: none;
+    }
+}
+
