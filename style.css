@@ -196,3 +196,11 @@ footer blockquote {
     }
     
 }
+
+/* Layout untuk PC/Laptop */
+@media only screen and (min-width:1025px){
+    .content h2{
+        font-family:monospace;
+        font-size: 50PX;
+    }
+}
